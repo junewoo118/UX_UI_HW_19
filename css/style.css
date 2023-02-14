@@ -8,7 +8,7 @@ body {
 .containerGrid {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-template-rows: 0.1fr 1fr 1fr 1fr;
+   grid-template-rows: 0.1fr 0.5fr 1fr 0.5fr;
    grid-gap: 1rem;
    grid-template-areas:
     "nav nav nav nav"
@@ -83,6 +83,7 @@ body {
     justify-content: center;
     background-color: whitesmoke;
     grid-area: hero;
+    margin-bottom: 4rem;
 }
 
 .heroFlex {
@@ -235,11 +236,10 @@ h2 {
 /* -----Footer----- */
 
 footer {
-    padding: 64pt 0pt;
     background-color: whitesmoke;
     color: black;
     grid-area: footer;
-    margin: 0 auto;
+    margin: 4rem auto;
 }
 
 .footerGrid {
@@ -332,6 +332,27 @@ ul {
     padding: 0;
     list-style-type:none;
   }
+
+/* -----About Me Page----- */
+.aboutme {
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutText {
+    font-family: 'Poppins';
+    font-size: 32pt;
+}
+
+.aboutBullets {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16pt;
+}
+
+.headshot {
+    width: 25%;
+    height: auto;
+}
 
 /* -----Mobile Query----- */
 
